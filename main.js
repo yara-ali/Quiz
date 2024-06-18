@@ -27,7 +27,7 @@ function getQuestions(){
 
             addQuestionData(questionObject[currentIndex],qCount);
 
-            countdown(5,qCount);
+            countdown(90,qCount);
 
             submitButton.onclick = () => {
                 let theRightAnswer = questionObject[currentIndex].right_answer;

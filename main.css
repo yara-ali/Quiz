@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poetsen One', Tahoma;
+}
+header .logo{
+    text-decoration: none;
+    font-size: 32px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.quiz-app{
+    margin: 20px auto;
+    width: 800px;
+    background-color: #808836;
+    color: #FFBF00;
+    padding: 15px;
+}
+.quiz-app .quiz-info{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+} 
+
+.quiz-app .quiz-info .counter{
+    flex: 1;
+    text-align: right;
+}
+.quiz-app .quiz-area {
+    padding: 20px;
+}
+.quiz-app .quiz-area h2{
+    margin: 5;
+}
+.quiz-app .answers-area .answer{
+    padding: 8px;
+    border: solid 1px #fff;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.quiz-app .answers-area .answer input[type='radio']:checked + label{
+    color: #615EFC;
+}
+.quiz-app .answers-area .answer label{
+    cursor: pointer;
+    margin-left: 5px;
+}
+.quiz-app .submit-button{
+    background-color: #D10363;
+    display: block;
+    width: 50%;
+    font-family: 'Poetsen One';
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.quiz-app .bullets{
+    display: flex;
+    /* padding: 20px; */
+}
+.quiz-app .bullets .spans {
+    display: flex;
+    flex: 1;
+    
+}
+.quiz-app .bullets .spans span{
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 8px;
+}
+.quiz-app .bullets .spans span.on{
+    background-color: #D10363;
+}
+.quiz-app .results {
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 50px;
+}
+.quiz-app .results span.bad{
+    color: #f80404;
+}
+.quiz-app .results span.good{
+    color: #fbff07;
+}
+.quiz-app .results span.perfect{
+    color: #0716f5;
+}
